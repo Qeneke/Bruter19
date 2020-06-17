@@ -9,4 +9,5 @@
 # USAGE
 * Give The Mail 
 * Give The Path Of The Wordlist
-* Wait :D
+# YOUTUBE VIDEO
+* https://www.youtube.com/watch?v=5S1NdxuPgnA
