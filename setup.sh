@@ -12,7 +12,6 @@ wget https://chromedriver.storage.googleapis.com/81.0.4044.69/chromedriver_linux
 unzip chromedriver_linux64.zip
 cp chromedriver path/
 rm chromedriver*
-sudo apt-get install figlet
 pip3 install certifi
 pip3 install -r requirements.txt
 
