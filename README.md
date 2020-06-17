@@ -7,7 +7,6 @@
 * sudo ./setup.sh
 * sudo python3 bruter19.py
 # USAGE
-# ![](banner/3.png)
 * Give The Mail 
 * Give The Path Of The Wordlist
 * Wait :D
