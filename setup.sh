@@ -2,13 +2,12 @@ if [ $(id -u) -ne 0 ]; then
 	echo "This script must be ran as root"
 	exit 1
 fi
-sudo apt install python3 -y
-sudo apt install python3-pip -y
-sudo pip3 install clint
-sudo apt-get update && sudo apt-get install python3-pip -y
-sudo apt-get install chromium -y
+apt install python3 -y
+apt install python3-pip -y
+pip3 install clint
+apt-get update 
+apt-get install chromium -y
 pip3 install colored
-sudo pip3 install colored
 wget https://chromedriver.storage.googleapis.com/81.0.4044.69/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 cp chromedriver path/
@@ -16,8 +15,6 @@ rm chromedriver*
 sudo apt-get install figlet
 pip3 install certifi
 pip3 install -r requirements.txt
-sudo pip3 install certifi
-sudo pip3 install -r requirements.txt
 
 # Ensure we are being ran as root
 if [ $(id -u) -ne 0 ]; then
