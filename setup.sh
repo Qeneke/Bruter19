@@ -1,3 +1,4 @@
+# Ensure we are being ran as root
 if [ $(id -u) -ne 0 ]; then
 	echo "This script must be ran as root"
 	exit 1
@@ -14,12 +15,6 @@ cp chromedriver path/
 rm chromedriver*
 pip3 install certifi
 pip3 install -r requirements.txt
-
-# Ensure we are being ran as root
-if [ $(id -u) -ne 0 ]; then
-	echo "This script must be ran as root"
-	exit 1
-fi
 
 # For upgrades and sanity check, remove any existing i2p.list file
 rm -f /etc/apt/sources.list.d/i2p.list
